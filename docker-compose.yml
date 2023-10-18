@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  oracle-xe:
+    image: container-registry.oracle.com/database/express:21.3.0-xe
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    ports:
+      - 1521:1521
+      - 5500:5500
+    environment:
+      - ORACLE_SID=XE
+      - ORACLE_PWD=password123
+
+volumes:
+  oracle-data:
