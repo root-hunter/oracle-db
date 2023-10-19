@@ -35,5 +35,10 @@ We use <a href="https://www.oracle.com/database/sqldeveloper/technologies/downlo
 <img src="screenshots/dba.png">
 <br />
 
+## Troubleshooting
+### 1. In oracle db image for default is set COMMON_USER_PREFIX with "C##" so every user and role must be start with "C##" prefix, if you want remove this limitation can set COMMON_USER_PREFIX to NULL
+```sql
+SELECT * FROM V$PARAMETER WHERE NAME = 'COMMON_USER_PREFIX';
+```
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/root-hunter/oracle-db/blob/master/LICENSE
