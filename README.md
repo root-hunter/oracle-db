@@ -22,4 +22,8 @@
 We use <a href="https://www.oracle.com/database/sqldeveloper/technologies/download/">Sql Developer</a>.
 
 1. Access to database
-   <img src="screenshots/login.png">
+<br />
+<img src="screenshots/login.png">
+<br />
+2. Add DBA
+<img src="screenshots/dba.png">
